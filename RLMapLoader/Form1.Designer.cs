@@ -52,6 +52,8 @@
             this.imagePreviewPictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.restoreDefaultMapCheckBox = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mapTypeComboBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagePreviewPictureBox)).BeginInit();
@@ -61,10 +63,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 56);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(21, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 20);
+            this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Current Freeplay Map:";
             // 
@@ -77,15 +78,14 @@
             this.rescanModsFolderToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(604, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(403, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // toolsToolStripMenuItem
@@ -96,50 +96,49 @@
             this.restoreOriginalParkPToolStripMenuItem,
             this.restoreDefaultSettingsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // mapPackageManagerToolStripMenuItem
             // 
             this.mapPackageManagerToolStripMenuItem.Name = "mapPackageManagerToolStripMenuItem";
-            this.mapPackageManagerToolStripMenuItem.Size = new System.Drawing.Size(287, 30);
+            this.mapPackageManagerToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.mapPackageManagerToolStripMenuItem.Text = "Map Package Manager";
             this.mapPackageManagerToolStripMenuItem.Click += new System.EventHandler(this.mapPackageManagerToolStripMenuItem_Click);
             // 
             // deleteParkPBackupToolStripMenuItem1
             // 
             this.deleteParkPBackupToolStripMenuItem1.Name = "deleteParkPBackupToolStripMenuItem1";
-            this.deleteParkPBackupToolStripMenuItem1.Size = new System.Drawing.Size(287, 30);
+            this.deleteParkPBackupToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
             this.deleteParkPBackupToolStripMenuItem1.Text = "Delete Park_P Backup";
             this.deleteParkPBackupToolStripMenuItem1.Click += new System.EventHandler(this.deleteParkPBackupToolStripMenuItem_Click);
             // 
             // restoreOriginalParkPToolStripMenuItem
             // 
             this.restoreOriginalParkPToolStripMenuItem.Name = "restoreOriginalParkPToolStripMenuItem";
-            this.restoreOriginalParkPToolStripMenuItem.Size = new System.Drawing.Size(287, 30);
+            this.restoreOriginalParkPToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.restoreOriginalParkPToolStripMenuItem.Text = "Restore Original Park_P";
             this.restoreOriginalParkPToolStripMenuItem.Click += new System.EventHandler(this.restoreOriginalParkPToolStripMenuItem_Click);
             // 
             // restoreDefaultSettingsToolStripMenuItem
             // 
             this.restoreDefaultSettingsToolStripMenuItem.Name = "restoreDefaultSettingsToolStripMenuItem";
-            this.restoreDefaultSettingsToolStripMenuItem.Size = new System.Drawing.Size(287, 30);
+            this.restoreDefaultSettingsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.restoreDefaultSettingsToolStripMenuItem.Text = "Restore Default Settings";
             this.restoreDefaultSettingsToolStripMenuItem.Click += new System.EventHandler(this.restoreDefaultSettingsToolStripMenuItem_Click);
             // 
             // rescanModsFolderToolStripMenuItem
             // 
             this.rescanModsFolderToolStripMenuItem.Name = "rescanModsFolderToolStripMenuItem";
-            this.rescanModsFolderToolStripMenuItem.Size = new System.Drawing.Size(184, 29);
+            this.rescanModsFolderToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.rescanModsFolderToolStripMenuItem.Text = "Rescan Mods Folder";
             this.rescanModsFolderToolStripMenuItem.Click += new System.EventHandler(this.rescanModsFolderToolStripMenuItem_Click);
             // 
             // loadMapButton
             // 
-            this.loadMapButton.Location = new System.Drawing.Point(508, 47);
-            this.loadMapButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.loadMapButton.Location = new System.Drawing.Point(340, 49);
             this.loadMapButton.Name = "loadMapButton";
-            this.loadMapButton.Size = new System.Drawing.Size(70, 38);
+            this.loadMapButton.Size = new System.Drawing.Size(47, 25);
             this.loadMapButton.TabIndex = 6;
             this.loadMapButton.Text = "Load";
             this.loadMapButton.UseVisualStyleBackColor = true;
@@ -147,54 +146,54 @@
             // 
             // rlDirTextBox
             // 
-            this.rlDirTextBox.Location = new System.Drawing.Point(116, 125);
-            this.rlDirTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rlDirTextBox.Location = new System.Drawing.Point(75, 99);
             this.rlDirTextBox.Name = "rlDirTextBox";
-            this.rlDirTextBox.Size = new System.Drawing.Size(385, 26);
+            this.rlDirTextBox.Size = new System.Drawing.Size(258, 20);
             this.rlDirTextBox.TabIndex = 10;
             // 
             // mapSelectComboBox
             // 
+            this.mapSelectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mapSelectComboBox.FormattingEnabled = true;
-            this.mapSelectComboBox.Location = new System.Drawing.Point(205, 52);
+            this.mapSelectComboBox.Location = new System.Drawing.Point(137, 52);
+            this.mapSelectComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mapSelectComboBox.Name = "mapSelectComboBox";
-            this.mapSelectComboBox.Size = new System.Drawing.Size(295, 28);
+            this.mapSelectComboBox.Size = new System.Drawing.Size(198, 21);
             this.mapSelectComboBox.TabIndex = 11;
-            this.mapSelectComboBox.Text = "Park_P.upk";
             this.mapSelectComboBox.SelectedIndexChanged += new System.EventHandler(this.mapSelectComboBox_SelectedIndexChanged);
             // 
             // modsDirTextBox
             // 
-            this.modsDirTextBox.Location = new System.Drawing.Point(116, 161);
-            this.modsDirTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.modsDirTextBox.Location = new System.Drawing.Point(75, 121);
             this.modsDirTextBox.Name = "modsDirTextBox";
-            this.modsDirTextBox.Size = new System.Drawing.Size(385, 26);
+            this.modsDirTextBox.Size = new System.Drawing.Size(258, 20);
             this.modsDirTextBox.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 128);
+            this.label1.Location = new System.Drawing.Point(30, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "RL Dir:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 164);
+            this.label3.Location = new System.Drawing.Point(18, 121);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 14;
             this.label3.Text = "Mods Dir:";
             // 
             // selectRLButton
             // 
-            this.selectRLButton.Location = new System.Drawing.Point(508, 121);
-            this.selectRLButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectRLButton.Location = new System.Drawing.Point(340, 96);
             this.selectRLButton.Name = "selectRLButton";
-            this.selectRLButton.Size = new System.Drawing.Size(70, 35);
+            this.selectRLButton.Size = new System.Drawing.Size(47, 23);
             this.selectRLButton.TabIndex = 15;
             this.selectRLButton.Text = "...";
             this.selectRLButton.UseVisualStyleBackColor = true;
@@ -202,10 +201,9 @@
             // 
             // selectModsButton
             // 
-            this.selectModsButton.Location = new System.Drawing.Point(508, 157);
-            this.selectModsButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectModsButton.Location = new System.Drawing.Point(340, 119);
             this.selectModsButton.Name = "selectModsButton";
-            this.selectModsButton.Size = new System.Drawing.Size(70, 34);
+            this.selectModsButton.Size = new System.Drawing.Size(47, 22);
             this.selectModsButton.TabIndex = 16;
             this.selectModsButton.Text = "...";
             this.selectModsButton.UseVisualStyleBackColor = true;
@@ -214,9 +212,10 @@
             // loadOnStartCheckBox
             // 
             this.loadOnStartCheckBox.AutoSize = true;
-            this.loadOnStartCheckBox.Location = new System.Drawing.Point(410, 93);
+            this.loadOnStartCheckBox.Location = new System.Drawing.Point(273, 77);
+            this.loadOnStartCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loadOnStartCheckBox.Name = "loadOnStartCheckBox";
-            this.loadOnStartCheckBox.Size = new System.Drawing.Size(167, 24);
+            this.loadOnStartCheckBox.Size = new System.Drawing.Size(114, 17);
             this.loadOnStartCheckBox.TabIndex = 17;
             this.loadOnStartCheckBox.Text = "Load Map on Start";
             this.loadOnStartCheckBox.UseVisualStyleBackColor = true;
@@ -227,9 +226,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 208);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 163);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(604, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(403, 22);
             this.statusStrip1.TabIndex = 18;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -240,18 +240,21 @@
             // 
             // imagePreviewPictureBox
             // 
-            this.imagePreviewPictureBox.Location = new System.Drawing.Point(16, 25);
+            this.imagePreviewPictureBox.Location = new System.Drawing.Point(11, 16);
+            this.imagePreviewPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imagePreviewPictureBox.Name = "imagePreviewPictureBox";
-            this.imagePreviewPictureBox.Size = new System.Drawing.Size(508, 177);
+            this.imagePreviewPictureBox.Size = new System.Drawing.Size(339, 115);
             this.imagePreviewPictureBox.TabIndex = 19;
             this.imagePreviewPictureBox.TabStop = false;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.imagePreviewPictureBox);
-            this.groupBox1.Location = new System.Drawing.Point(36, 442);
+            this.groupBox1.Location = new System.Drawing.Point(24, 287);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 223);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(361, 145);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Map Preview:";
@@ -259,19 +262,44 @@
             // restoreDefaultMapCheckBox
             // 
             this.restoreDefaultMapCheckBox.AutoSize = true;
-            this.restoreDefaultMapCheckBox.Location = new System.Drawing.Point(205, 93);
+            this.restoreDefaultMapCheckBox.Location = new System.Drawing.Point(137, 77);
+            this.restoreDefaultMapCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.restoreDefaultMapCheckBox.Name = "restoreDefaultMapCheckBox";
-            this.restoreDefaultMapCheckBox.Size = new System.Drawing.Size(197, 24);
+            this.restoreDefaultMapCheckBox.Size = new System.Drawing.Size(135, 17);
             this.restoreDefaultMapCheckBox.TabIndex = 21;
             this.restoreDefaultMapCheckBox.Text = "Restore Park_P on exit";
             this.restoreDefaultMapCheckBox.UseVisualStyleBackColor = true;
             this.restoreDefaultMapCheckBox.CheckedChanged += new System.EventHandler(this.restoreDefaultMapCheckBox_CheckedChanged);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(74, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Map Type:";
+            // 
+            // mapTypeComboBox
+            // 
+            this.mapTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mapTypeComboBox.FormattingEnabled = true;
+            this.mapTypeComboBox.Items.AddRange(new object[] {
+            "Originals",
+            "Custom"});
+            this.mapTypeComboBox.Location = new System.Drawing.Point(137, 28);
+            this.mapTypeComboBox.Name = "mapTypeComboBox";
+            this.mapTypeComboBox.Size = new System.Drawing.Size(198, 21);
+            this.mapTypeComboBox.TabIndex = 23;
+            this.mapTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.mapTypeComboBox_SelectedIndexChanged);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 230);
+            this.ClientSize = new System.Drawing.Size(403, 185);
+            this.Controls.Add(this.mapTypeComboBox);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.restoreDefaultMapCheckBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
@@ -287,7 +315,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "RL Map Loader";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -328,6 +355,8 @@
         private System.Windows.Forms.CheckBox restoreDefaultMapCheckBox;
         private System.Windows.Forms.ToolStripMenuItem restoreDefaultSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rescanModsFolderToolStripMenuItem;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox mapTypeComboBox;
     }
 }
 
