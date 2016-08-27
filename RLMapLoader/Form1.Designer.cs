@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -156,7 +157,7 @@
             this.mapSelectComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mapSelectComboBox.FormattingEnabled = true;
             this.mapSelectComboBox.Location = new System.Drawing.Point(137, 52);
-            this.mapSelectComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mapSelectComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.mapSelectComboBox.Name = "mapSelectComboBox";
             this.mapSelectComboBox.Size = new System.Drawing.Size(198, 21);
             this.mapSelectComboBox.TabIndex = 11;
@@ -213,7 +214,7 @@
             // 
             this.loadOnStartCheckBox.AutoSize = true;
             this.loadOnStartCheckBox.Location = new System.Drawing.Point(273, 77);
-            this.loadOnStartCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loadOnStartCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.loadOnStartCheckBox.Name = "loadOnStartCheckBox";
             this.loadOnStartCheckBox.Size = new System.Drawing.Size(114, 17);
             this.loadOnStartCheckBox.TabIndex = 17;
@@ -241,7 +242,7 @@
             // imagePreviewPictureBox
             // 
             this.imagePreviewPictureBox.Location = new System.Drawing.Point(11, 16);
-            this.imagePreviewPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imagePreviewPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.imagePreviewPictureBox.Name = "imagePreviewPictureBox";
             this.imagePreviewPictureBox.Size = new System.Drawing.Size(339, 115);
             this.imagePreviewPictureBox.TabIndex = 19;
@@ -251,9 +252,9 @@
             // 
             this.groupBox1.Controls.Add(this.imagePreviewPictureBox);
             this.groupBox1.Location = new System.Drawing.Point(24, 287);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(361, 145);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
@@ -263,7 +264,7 @@
             // 
             this.restoreDefaultMapCheckBox.AutoSize = true;
             this.restoreDefaultMapCheckBox.Location = new System.Drawing.Point(137, 77);
-            this.restoreDefaultMapCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.restoreDefaultMapCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.restoreDefaultMapCheckBox.Name = "restoreDefaultMapCheckBox";
             this.restoreDefaultMapCheckBox.Size = new System.Drawing.Size(135, 17);
             this.restoreDefaultMapCheckBox.TabIndex = 21;
@@ -282,13 +283,15 @@
             // 
             // mapTypeComboBox
             // 
+            this.mapTypeComboBox.BackColor = System.Drawing.SystemColors.Window;
             this.mapTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mapTypeComboBox.FormattingEnabled = true;
             this.mapTypeComboBox.Items.AddRange(new object[] {
-            "Originals",
+            "Defaults",
             "Custom"});
             this.mapTypeComboBox.Location = new System.Drawing.Point(137, 28);
             this.mapTypeComboBox.Name = "mapTypeComboBox";
+            this.mapTypeComboBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.mapTypeComboBox.Size = new System.Drawing.Size(198, 21);
             this.mapTypeComboBox.TabIndex = 23;
             this.mapTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.mapTypeComboBox_SelectedIndexChanged);
@@ -314,6 +317,7 @@
             this.Controls.Add(this.loadMapButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "RL Map Loader";

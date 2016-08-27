@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,7 @@ namespace RLMapLoader
         private Memory rlMemory;
         IntPtr trainingMapAddress;
         MapPackageManager mpm;
+        private WebClient webClient;
 
         public Form1()
         {
@@ -443,42 +445,53 @@ namespace RLMapLoader
         {
             mapSelectComboBox.Items.Clear();
 
-            InitializeCustomMapList();
+            if (mapTypeComboBox.Text == "Custom")
+            {
+                if (mapSelectComboBox.Items.Count > 0)
+                {
+                    mapSelectComboBox.Items.Clear();
+                }
+                InitializeCustomMapList();
+            }
+            else
+            {
+                // Add default maps to selection
+                mapSelectComboBox.Items.Add("[Default] EuroStadium_P.upk");
+                mapSelectComboBox.Items.Add("[Default] EuroStadium_Rainy_P.upk");
 
-            // Add default maps to selection
-            mapSelectComboBox.Items.Add("[Default] EuroStadium_P.upk");
-            mapSelectComboBox.Items.Add("[Default] EuroStadium_Rainy_P.upk");
+                mapSelectComboBox.Items.Add("[Default] HoopsStadium_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] HoopsStadium_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_CirclePillars_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_Cosmic_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_DoubleGoal_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_Underpass_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_Underpass_v0_p.upk");
+                mapSelectComboBox.Items.Add("[Default] Labs_Utopia_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] Labs_CirclePillars_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Labs_Cosmic_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Labs_DoubleGoal_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Labs_Underpass_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Labs_Underpass_v0_p.upk");
-            mapSelectComboBox.Items.Add("[Default] Labs_Utopia_P.upk");
+                mapSelectComboBox.Items.Add("[Default] NeoTokyo_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] NeoTokyo_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Park_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Park_Night_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Park_Rainy_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] Park_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Park_Night_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Park_Rainy_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Stadium_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Stadium_Winter_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] Stadium_P.upk");
-            mapSelectComboBox.Items.Add("[Default] Stadium_Winter_P.upk");
+                mapSelectComboBox.Items.Add("[Default] test_Volleyball.upk");
 
-            mapSelectComboBox.Items.Add("[Default] test_Volleyball.upk");
+                mapSelectComboBox.Items.Add("[Default] TrainStation_P.upk");
+                mapSelectComboBox.Items.Add("[Default] TrainStation_Night_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] TrainStation_P.upk");
-            mapSelectComboBox.Items.Add("[Default] TrainStation_Night_P.upk");
+                mapSelectComboBox.Items.Add("[Default] TutorialAdvanced.upk");
+                mapSelectComboBox.Items.Add("[Default] TutorialTest.upk");
 
-            mapSelectComboBox.Items.Add("[Default] TutorialAdvanced.upk");
-            mapSelectComboBox.Items.Add("[Default] TutorialTest.upk");
+                mapSelectComboBox.Items.Add("[Default] UtopiaStadium_P.upk");
+                mapSelectComboBox.Items.Add("[Default] UtopiaStadium_Dusk_P.upk");
 
-            mapSelectComboBox.Items.Add("[Default] UtopiaStadium_P.upk");
-            mapSelectComboBox.Items.Add("[Default] UtopiaStadium_Dusk_P.upk");
+                mapSelectComboBox.Items.Add("[Default] Wasteland_P.upk");
+            }
 
-            mapSelectComboBox.Items.Add("[Default] Wasteland_P.upk");
+            
 
             if (Properties.Settings.Default.lastMap != "")
             {
@@ -560,5 +573,7 @@ namespace RLMapLoader
                 mapSelectComboBox.Items.Add("[Default] Wasteland_P.upk");
             }
         }
+
+        
     }
 }

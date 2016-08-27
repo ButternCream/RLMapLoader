@@ -50,9 +50,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.packageStatusLabel,
             this.downloadProgressBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 939);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(999, 28);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(666, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.SizeChanged += new System.EventHandler(this.statusStrip1_SizeChanged);
@@ -60,14 +61,14 @@
             // packageStatusLabel
             // 
             this.packageStatusLabel.Name = "packageStatusLabel";
-            this.packageStatusLabel.Size = new System.Drawing.Size(882, 23);
+            this.packageStatusLabel.Size = new System.Drawing.Size(587, 17);
             this.packageStatusLabel.Spring = true;
             this.packageStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // downloadProgressBar
             // 
             this.downloadProgressBar.Name = "downloadProgressBar";
-            this.downloadProgressBar.Size = new System.Drawing.Size(100, 22);
+            this.downloadProgressBar.Size = new System.Drawing.Size(67, 16);
             // 
             // menuStrip1
             // 
@@ -77,14 +78,15 @@
             this.optionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(999, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(666, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // optionsToolStripMenuItem
@@ -93,20 +95,20 @@
             this.updatePackageListToolStripMenuItem,
             this.createMapPackageToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Visible = false;
             // 
             // updatePackageListToolStripMenuItem
             // 
             this.updatePackageListToolStripMenuItem.Name = "updatePackageListToolStripMenuItem";
-            this.updatePackageListToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
+            this.updatePackageListToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.updatePackageListToolStripMenuItem.Text = "Update Package List";
             // 
             // createMapPackageToolStripMenuItem
             // 
             this.createMapPackageToolStripMenuItem.Name = "createMapPackageToolStripMenuItem";
-            this.createMapPackageToolStripMenuItem.Size = new System.Drawing.Size(257, 30);
+            this.createMapPackageToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.createMapPackageToolStripMenuItem.Text = "Create Map Package";
             // 
             // dataGridView1
@@ -118,13 +120,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 51);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 100;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(975, 847);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 551);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -134,9 +137,10 @@
             // 
             // depDownloadButton
             // 
-            this.depDownloadButton.Location = new System.Drawing.Point(770, 36);
+            this.depDownloadButton.Location = new System.Drawing.Point(513, 23);
+            this.depDownloadButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.depDownloadButton.Name = "depDownloadButton";
-            this.depDownloadButton.Size = new System.Drawing.Size(217, 37);
+            this.depDownloadButton.Size = new System.Drawing.Size(145, 24);
             this.depDownloadButton.TabIndex = 3;
             this.depDownloadButton.Text = "Download Dependencies";
             this.depDownloadButton.UseVisualStyleBackColor = true;
@@ -144,14 +148,15 @@
             // 
             // MapPackageManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 967);
+            this.ClientSize = new System.Drawing.Size(666, 629);
             this.Controls.Add(this.depDownloadButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MapPackageManager";
             this.Text = "MapPackageManager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MapPackageManager_FormClosing);
